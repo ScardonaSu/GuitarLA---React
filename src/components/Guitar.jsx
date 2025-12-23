@@ -1,6 +1,12 @@
 export function Guitar({guitar}) {
 
-    const {name, price, description, image} = guitar
+    const {id, name, price, description, image} = guitar
+
+    const handleClick = (id) => {
+
+        console.log('Diste click ', id);
+        
+    }
 
     return (
         <div className="col-md-6 col-lg-4 my-4 row align-items-center">
@@ -14,6 +20,7 @@ export function Guitar({guitar}) {
                 <button
                     type="button"
                     className="btn btn-dark w-100"
+                    onClick={()=>  handleClick(guitar)}
                 >Agregar al Carrito</button>
             </div>
         </div>
