@@ -27,7 +27,10 @@ function App() {
           {
             data.map(()=> (
 
-              <Guitar></Guitar>
+              <Guitar 
+                price={100}
+                auth={true}
+              />
 
             ))
           }

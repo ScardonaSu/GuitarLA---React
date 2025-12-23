@@ -1,4 +1,7 @@
-export function Guitar() {
+export function Guitar(props) {
+
+    
+    
 
 
     return (
