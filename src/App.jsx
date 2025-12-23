@@ -10,20 +10,7 @@ function App() {
   const [auth, setAuth] = useState(false)
   //state
 
-  useEffect(()=> {
-
-    if (auth) {
-      console.log('Autenticado');
-      
-    }
-
-  },[auth])
-
-  setTimeout(() => {
-    setAuth(true)
-  }, 2000);
-
-  
+  const[data, setData] = useState(db)
   
 
   return (
