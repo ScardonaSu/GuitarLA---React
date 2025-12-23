@@ -1,8 +1,16 @@
 import Header from "./components/Header.jsx";
 import {Guitar} from "./components/Guitar.jsx";
+import { useState } from "react";
 
 function App() {
 
+
+  //state
+  const [auth, setAuth] = useState([])
+
+  console.log(auth);
+  
+  
 
   return (
     <>
