@@ -9,6 +9,18 @@ function App() {
   //state
   const [data, setData] = useState(db)
   const [cart, setCart] = useState([])
+
+  function addToCart(item) {
+
+    const itemExists = cart.findIndex((guitar)=> guitar.id === item.id)
+    if (condition) {
+      
+    }
+    
+
+
+    setCart(prevCart => [...prevCart, item])
+  }
   
   
 
@@ -31,6 +43,7 @@ function App() {
                 guitar={guitar}
                 key={guitar.id}
                 setCart={setCart}
+                addToCart={addToCart}
               />
 
             ))
